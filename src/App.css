@@ -1,11 +1,37 @@
 .App {
-  width: 60%;
+  background-color: #FEE140;
+  background-image: linear-gradient(225deg, #FEE140 0%, #FA709A 100%);
+  height:100vh;
+}
+#blogposts {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   margin: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-top: 3rem;
 }
 
-.App h1 {
-  font-size: 3em;
+header {
   text-align: center;
+  height: 90vh;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 30vh;
+}
+
+button {
+  font-size: 1rem;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
 }
 
 .title {
@@ -15,4 +41,13 @@
 img {
   max-width: 100%;
   height: auto;
+}
+
+.gallery-row {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
 }
