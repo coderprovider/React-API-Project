@@ -5,11 +5,19 @@
 ==================== */
 
 @media screen and (min-width: 745px) {
-  header h1 {
+  header {
     text-align: left;
+  }
+  header h1 {
     padding: 1rem 0 0 1rem;
   }
-  #blogposts {
-    width: 50%;
+  header h2 {
+    padding-left: 1rem;
+  }
+  #blog {
+    padding: 0 25% 0 25%;
+  }
+  #home {
+    flex-direction: row;
   }
 }

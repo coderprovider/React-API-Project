@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
-import './App.css';
-import './Responsive.css'
+import React from 'react';
 
-import Header from './Header';
-import Footer from './Footer';
+// import React, { Component } from 'react';
 
-class App extends React.Component {
+class Blog extends React.Component {
   constructor () {
     super()
     this.state = {
@@ -25,18 +22,12 @@ class App extends React.Component {
         console.log('Error fetching and parsing data', error);
       });
   }
-// Toggle state of isHidden for Button to reveal blogs
-  toggleHidden () {
-    this.setState({
-      isHidden: !this.state.isHidden
-    })
-  }
 
 // Render button for blogs to print to DOM
   render () {
     let blogs = this.state.blogs.map((blogs, index) => {
       return (
-        <div id="blogposts" key={index}>
+        <div id="blog" key={index}>
           <h2 className="title">{blogs.title.rendered}</h2>
           <p>{blogs.date}</p>
           <div dangerouslySetInnerHTML={{__html: blogs.content.rendered}} />
@@ -45,16 +36,11 @@ class App extends React.Component {
     })
 // eventually I want to click and scroll
     return (
-      <div className="App">
-        <Header />
-        <button onClick={this.toggleHidden.bind(this)}>
-          <p>Show/Hide Recent Posts</p>
-        </button>
-        {!this.state.isHidden && blogs}
-        <Footer />
+      <div className="Blog">
+        {blogs}
       </div>
     )
   }
 }
 
-export default App;
+export default Blog;

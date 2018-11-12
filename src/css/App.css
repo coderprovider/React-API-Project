@@ -20,6 +20,8 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #4c4c4c;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -28,12 +30,43 @@ body {
   height: 100vh;
 }
 
+a:link {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+a:hover {
+  color: purple;
+}
+
+/* a:active {
+  color: green;
+} */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding-top: 2rem;
+  height: 100%;
+}
+
+.main-content h2 {
+  text-align: center;
+}
+
+#home,
+#blog,
+#contact {
+  padding: 1rem;
+}
+
 /* =================
    HEADER SETTINGS
 ==================== */
 
 header {
-  height: 85vh;
   text-align: center;
 }
 
@@ -45,34 +78,44 @@ header h1 {
 }
 
 header h2 {
-  font-size: 3rem;
-  padding-top: 20vh
+  font-size: 1.2rem;
+  margin-top: 0;
 }
 
-button {
-  font-size: 1rem;
+/* Nav */
+.main-nav {
+  display: flex;
   justify-content: center;
-  width: 100%;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  outline: none;
-  font-family: 'Lato', sans-serif;
-  color: #4c4c4c;
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+.main-nav a {
+  padding: 1rem;
 }
 
 /* =================
    BODY SETTINGS
 ==================== */
-
-#blogposts {
+/* Home */
+#home {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: auto;
+  align-items: center;
+}
+#home img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* Blogs */
+#blog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  margin-top: 3rem;
+  background: white;
 }
 
 .title {
@@ -87,6 +130,9 @@ img {
 .gallery-row {
   display: none;
 }
+
+/* Contact */
+
 
 /* =================
    FOOTER SETTINGS
