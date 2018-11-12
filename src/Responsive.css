@@ -1,0 +1,15 @@
+/************ MEDIA QUERIES ************/
+
+/* =================
+ MEDIA QUERY >745px
+==================== */
+
+@media screen and (min-width: 745px) {
+  header h1 {
+    text-align: left;
+    padding: 1rem 0 0 1rem;
+  }
+  #blogposts {
+    width: 50%;
+  }
+}

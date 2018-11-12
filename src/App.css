@@ -1,27 +1,52 @@
+/* CSS DIRECTORY
+        1. =PRIMARY
+        3. =HEADER
+        4. =BODY
+        4. =FOOTER
+*/
+
+/* Validate on CSSLint.net */
+
+
+/* =================
+   PRIMARY SETTINGS
+==================== */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+}
+
 .App {
   background-color: #FEE140;
   background-image: linear-gradient(225deg, #FEE140 0%, #FA709A 100%);
-  height:100vh;
-}
-#blogposts {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: auto;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  margin-top: 3rem;
+  height: 100vh;
 }
 
+/* =================
+   HEADER SETTINGS
+==================== */
+
 header {
+  height: 85vh;
   text-align: center;
-  height: 90vh;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
-  padding-top: 30vh;
+  font-family: 'Rouge Script', cursive;
+  padding-top: 1rem;
+}
+
+header h2 {
+  font-size: 3rem;
+  padding-top: 20vh
 }
 
 button {
@@ -32,6 +57,22 @@ button {
   background: transparent;
   cursor: pointer;
   outline: none;
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+}
+
+/* =================
+   BODY SETTINGS
+==================== */
+
+#blogposts {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-top: 3rem;
 }
 
 .title {
@@ -47,7 +88,12 @@ img {
   display: none;
 }
 
+/* =================
+   FOOTER SETTINGS
+==================== */
+
 footer {
   text-align: center;
   font-size: 0.8rem;
+  margin: 1rem;
 }

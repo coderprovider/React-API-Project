@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './Responsive.css'
 
 import Header from './Header';
 import Footer from './Footer';
@@ -47,7 +48,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <button onClick={this.toggleHidden.bind(this)}>
-          Click for Recent Posts
+          <p>Show/Hide Recent Posts</p>
         </button>
         {!this.state.isHidden && blogs}
         <Footer />
