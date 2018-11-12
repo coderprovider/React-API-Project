@@ -24,22 +24,13 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
   height: 100vh;
 }
-
-a:link {
-  text-decoration: none;
-  color: #4c4c4c;
-}
-
-a:hover {
-  color: purple;
-}
-
-/* a:active {
-  color: green;
-} */
 
 .main-content {
   display: flex;
@@ -93,6 +84,14 @@ header h2 {
 }
 .main-nav a {
   padding: 1rem;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+  background: white;
+}
+.main-nav a {
+  color: #4c4c4c;
 }
 
 /* =================
