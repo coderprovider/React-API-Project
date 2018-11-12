@@ -6,7 +6,6 @@ import {
 
 // App Components
 import Header from './Header';
-import Footer from './Footer';
 import Home from './Home';
 import Blog from './Blog';
 import Contact from './Contact';
@@ -18,7 +17,6 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/blog" component={Blog} />
       <Route path="/contact" component={Contact} />
-      <Footer />
     </div>
   </BrowserRouter>
 );

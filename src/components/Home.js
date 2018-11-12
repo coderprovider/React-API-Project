@@ -3,10 +3,11 @@ import FamilyPhoto from '../img/family.jpg';
 
 const Home = () => (
   <div className="main-content">
+    <h2>Welcome!</h2>
     <div id="home">
       <img src={FamilyPhoto} alt="Our family" />
       <div id="home-copy">
-        <h2>Welcome!</h2>
+
         <p><b>Thanks for stopping by!</b></p>
 
         <p>My name is Kayla, and I am a wife, a momma, and a nurse. I believe that as we grow older, we are never to stop seeking out ways in which we might flourish, ways that we might become more truly human.</p>

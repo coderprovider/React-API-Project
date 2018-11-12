@@ -5,9 +5,9 @@
 ==================== */
 
 @media screen and (min-width: 745px) {
-  header {
+  /* header {
     text-align: left;
-  }
+  } */
   header h1 {
     padding: 1rem 0 0 1rem;
   }
