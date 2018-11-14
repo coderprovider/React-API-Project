@@ -8,16 +8,13 @@
   /* header {
     text-align: left;
   } */
-  header h1 {
-    padding: 1rem 0 0 1rem;
-  }
-  header h2 {
-    padding-left: 1rem;
-  }
   #blog {
     padding: 0 25% 0 25%;
   }
   #home {
     flex-direction: row;
+  }
+  .gallery {
+    padding: 0 25% 0 25%;
   }
 }

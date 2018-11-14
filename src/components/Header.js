@@ -10,8 +10,9 @@ const Header = props =>
     <div>
       <ul className="main-nav">
         <li><NavLink exact to="/">Home</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
         <li><NavLink to="/blog">Blog</NavLink></li>
+        <li><NavLink to="/gallery">Gallery</NavLink></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
     </div>
   </header>

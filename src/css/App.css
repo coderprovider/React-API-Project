@@ -60,6 +60,7 @@ header {
   text-align: center;
   background-color: #FEE140;
   background-image: linear-gradient(225deg, #FEE140 0%, #FA709A 100%);
+  margin-left: 0;
 }
 
 header h1 {
@@ -119,6 +120,13 @@ header h2 {
   background: white;
 }
 
+#blog-header {
+  font-family: 'Rouge Script', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 .title {
   font-size: 2em;
 }
@@ -134,6 +142,17 @@ img {
 
 /* Contact */
 
+/* Gallery */
+.gallery-image {
+  height: auto;
+  width: 100%;
+  padding: 0 10px;
+  padding-top: 10px;
+}
+
+.gallery h2 {
+  padding-bottom: 2rem;
+}
 
 /* =================
    FOOTER SETTINGS

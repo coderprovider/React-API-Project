@@ -16,7 +16,7 @@ class Blog extends React.Component {
   }
 // Fetch WordPress API blog posts; eventually I want to bring in <LoadingSpinner />
   componentDidMount() {
-    let API = "http://findingrubies.com/wp-json/wp/v2/posts";
+    let API = "http://findingrubies.com/wp-json/wp/v2/posts?per_page=100";
     fetch(API)
       .then(response => response.json())
       .then(response => {
@@ -28,6 +28,7 @@ class Blog extends React.Component {
   }
 
 // Render button for blogs to print to DOM
+// Need to fix date styling
   render () {
     let blogs;
     if (this.state.loading) {
@@ -36,7 +37,7 @@ class Blog extends React.Component {
       blogs = this.state.blogs.map((blogs, index) => {
         return (
           <div id="blog" key={index}>
-            <h2 className="title">{blogs.title.rendered}</h2>
+            <h3 className="title">{blogs.title.rendered}</h3>
             <p>{blogs.date}</p>
             <div dangerouslySetInnerHTML={{__html: blogs.content.rendered}} />
           </div>
@@ -46,6 +47,7 @@ class Blog extends React.Component {
 
     return (
       <div className="Blog">
+        <h2 id="blog-header">Blog Posts</h2>
         {blogs}
       </div>
     )
