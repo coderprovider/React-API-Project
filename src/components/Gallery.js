@@ -5,7 +5,7 @@ import React from 'react';
 // Components
 import LoadingSpinner from './LoadingSpinner'
 
-// State is holding both the array of images received from API and a loading boolean that is a placeholder until the images load in
+// State is holding both the array of images received from API (gallery) and a loading boolean that is a placeholder until the images load in
 class Gallery extends React.Component {
   constructor () {
     super()
@@ -14,7 +14,7 @@ class Gallery extends React.Component {
       loading: true,
     }
   }
-// Fetch WordPress API image posts; eventually I want to bring in <LoadingSpinner />
+// Fetch WordPress API images from Media endpoint
   componentDidMount() {
     let API = "http://findingrubies.com/wp-json/wp/v2/media";
     fetch(API)

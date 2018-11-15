@@ -14,7 +14,7 @@ class Blog extends React.Component {
       loading: true,
     }
   }
-// Fetch WordPress API blog posts; eventually I want to bring in <LoadingSpinner />
+// Fetch WordPress API blogs from Posts endpoint
   componentDidMount() {
     let API = "http://findingrubies.com/wp-json/wp/v2/posts?per_page=100";
     fetch(API)
@@ -27,7 +27,7 @@ class Blog extends React.Component {
       });
   }
 
-// Render button for blogs to print to DOM
+// Render blog posts (title, date, and copy) to DOM
 // Need to fix date styling
   render () {
     let blogs;

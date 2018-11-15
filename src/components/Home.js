@@ -1,6 +1,8 @@
 import React from 'react';
 import FamilyPhoto from '../img/family.jpg';
+import Footer from './Footer'
 
+// Home/about Component with a picture and copy about blog.
 const Home = () => (
   <div className="main-content">
     <h2>Welcome!</h2>
@@ -17,6 +19,7 @@ const Home = () => (
         <p>Come along with me on this journey, and you will find recipes, natural living ideas, and much more!</p>
       </div>
     </div>
+    <Footer />
   </div>
 );
 

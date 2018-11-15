@@ -13,6 +13,7 @@ import Gallery from './Gallery';
 import Contact from './Contact';
 import NotFound from './NotFound';
 
+// React-router for a bookmarkable and shareable navigation
 const App = () => (
   <BrowserRouter>
     <div className="App">

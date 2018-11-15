@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+// Header Component with blog name, slogan, and nav
 const Header = props =>
   <header>
     <div>
