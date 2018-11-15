@@ -1,6 +1,6 @@
 import React from 'react';
 import FamilyPhoto from '../img/family.jpg';
-import Footer from './Footer'
+import Footer from './Footer';
 
 // Home/about Component with a picture and copy about blog.
 const Home = () => (
